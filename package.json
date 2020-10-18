@@ -1,0 +1,23 @@
+{
+  "name": "diagnal",
+  "version": "1.0.0",
+  "description": "og parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragyam1107/metadata_scraper.git"
+  },
+  "keywords": [
+    "metadata",
+    "scraper"
+  ],
+  "author": "Pragya Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pragyam1107/metadata_scraper/issues"
+  },
+  "homepage": "https://github.com/pragyam1107/metadata_scraper#readme"
+}
