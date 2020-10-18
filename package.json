@@ -2,7 +2,7 @@
   "name": "diagnal",
   "version": "1.0.0",
   "description": "og parameters",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "node server.js"
   },
@@ -14,10 +14,15 @@
     "metadata",
     "scraper"
   ],
+  "NODE_ENV": "production",
   "author": "Pragya Mishra",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pragyam1107/metadata_scraper/issues"
   },
-  "homepage": "https://github.com/pragyam1107/metadata_scraper#readme"
+  "homepage": "https://github.com/pragyam1107/metadata_scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "flat-cache": "^2.0.1"
+  }
 }
