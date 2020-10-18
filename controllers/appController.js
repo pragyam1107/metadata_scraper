@@ -1,5 +1,5 @@
 'use strict'
-const _ = require('lodash')
+// const _ = require('lodash')
 const async = require('async')
 const cheerio = require('cheerio')
 const request = require('request')
