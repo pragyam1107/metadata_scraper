@@ -6,6 +6,33 @@ const request = require('request')
 const flatCache = require('flat-cache')
 let cache = flatCache.load('url')
 
+exports.welcome = function (req, res) {
+    let welcome = `This is an express application that scrapes metadata from websites.
+    Major functionalities -
+    Scrapes metadata of website
+    Uses caching for faster performance
+    POST https://metadatascraper1.herokuapp.com/application/json
+    Sample request:
+    {
+        "url": "https://stackoverflow.com/questions/48900331/node-js-puppeteer-metadata"
+    }
+    
+    Sample Response: 
+    {
+        "status": "success",
+        "message": {
+            "title": "node.js - node js puppeteer metadata - Stack Overflow",
+            "description": "I am new to Puppeteer, and I am trying to extract meta data from a Web site using Node.JS and Puppeteer. I just can't seem to get the syntax right. The code below works perfectly extracting the Title",
+            "images": [
+                "https://i.stack.imgur.com/MzQwC.jpg?s=32&g=1",
+                "https://www.gravatar.com/avatar/95dbf829bd1b1b9ded1dc3bf29638aca?s=32&d=identicon&r=PG&f=1",
+                "https://www.gravatar.com/avatar/080e2938da348f9045d1ee6e521c2b9f?s=32&d=identicon&r=PG"
+            ]
+        }
+    }`
+    res.send(welcome)
+}
+
 exports.scrapePage = function (req, res) {
     var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
     '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
