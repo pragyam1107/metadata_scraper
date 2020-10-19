@@ -7,7 +7,7 @@ Scrapes metadata of website
 
 Uses caching for faster performance
 
-The application is already hosten on heroku
+The application is already hosted on heroku
 
 It can be tested using postman.
 
