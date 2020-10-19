@@ -7,6 +7,12 @@ Scrapes metadata of website
 
 Uses caching for faster performance
 
+The application is already hosten on heroku
+
+It can be tested using postman.
+
+POST https://metadatascraper1.herokuapp.com/application/json
+
 Sample request:
 {
     
@@ -32,5 +38,12 @@ Sample Response:
 
 
 
-Unit Test Cases
+Features
 
+This supports all types of websites that have or don't have og tags.
+
+To learn more about og tags check out:
+
+http://ogp.me/
+
+It uses caching for faster user experience.
